@@ -1,0 +1,46 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"next dev\" \"i18nexus listen\"",
+    // "build": "i18nexus pull && next build",
+    "build": "next build",
+    // "start": "i18nexus pull && next start",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.9",
+    "@reduxjs/toolkit": "^2.9.2",
+    "@tailwindcss/forms": "^0.5.10",
+    "async-mutex": "^0.5.0",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.24",
+    "next": "16.0.0",
+    "next-intl": "^4.4.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-icons": "^5.5.0",
+    "react-redux": "^9.2.0",
+    "react-toastify": "^11.0.5",
+    "react-world-flags": "^1.6.0"
+  },
+  "devDependencies": {
+    "@iconify/react": "^6.0.2",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-world-flags": "^1.6.0",
+    "concurrently": "^9.2.1",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.0",
+    "i18nexus-cli": "^3.8.2",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.1",
+    "tailwindcss": "^4",
+    "typescript": "^5.9.3"
+  }
+}

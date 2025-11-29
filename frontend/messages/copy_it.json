@@ -1,0 +1,34 @@
+{
+    "dashboard": {
+        "welcome": "Questa è la home page. Benvenuto."
+    },
+    "forms": {
+        "accountActivated": "Account attivato",
+        "activationFailed": "Impossibile attivare il tuo account",
+        "alreadyAccount": "Hai già un account?",
+        "buttonLogIn": "Accedi",
+        "buttonRegister": "Registrati",
+        "checkEmailActivateAccount": "Controlla la tua email per attivare il tuo account",
+        "confirmPassword": "Conferma la password",
+        "emailAddress": "Indirizzo email",
+        "firstName": "Nome",
+        "forgotPassword": "Hai dimenticato la password?",
+        "lastName": "Cognome",
+        "loginFailed": "Accesso non riuscito",
+        "loginLink": "Accedi qui",
+        "loginSuccess": "Accesso effettuato con successo",
+        "noAccount": "Non hai un account?",
+        "password": "Password",
+        "registerLink": "Registrati qui",
+        "registrationFailed": "Registrazione dell'account fallita. Contatta l'amministratore per favore.",
+        "titleLogIn": "Accedi al tuo account",
+        "titleRegister": "Registrazione Online per Nuovi Utenti",
+        "titleSignUp": "Registrati per il tuo account"
+    },
+    "sidebar": {
+        "dashboard": "Cruscotto",
+        "expenses": "Spese",
+        "financial": "Finanziario",
+        "invoices": "Fatture"
+    }
+}

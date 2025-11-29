@@ -1,0 +1,34 @@
+{
+    "dashboard": {
+        "welcome": "Aceasta este pagina de start. Bun venit."
+    },
+    "forms": {
+        "accountActivated": "Cont activat",
+        "activationFailed": "Activarea contului tău a eșuat",
+        "alreadyAccount": "Ai deja un cont?",
+        "buttonLogIn": "Conectează-te",
+        "buttonRegister": "Înscrie-te",
+        "checkEmailActivateAccount": "Te rugăm să verifici emailul tău pentru a activa contul tău",
+        "confirmPassword": "Confirmați parola",
+        "emailAddress": "Adresă de email",
+        "firstName": "Prenume",
+        "forgotPassword": "Ați uitat parola?",
+        "lastName": "Nume de familie",
+        "loginFailed": "Autentificare eșuată",
+        "loginLink": "Conectează-te aici",
+        "loginSuccess": "Conectare reușită",
+        "noAccount": "Nu ai un cont?",
+        "password": "Parola",
+        "registerLink": "Înscrie-te aici",
+        "registrationFailed": "Înregistrarea contului a eșuat. Te rugăm să contactezi administratorul.",
+        "titleLogIn": "Conectează-te în contul tău",
+        "titleRegister": "Înregistrare nou utilizator online",
+        "titleSignUp": "Înscrie-te pentru contul tău"
+    },
+    "sidebar": {
+        "dashboard": "Tabloul de bord",
+        "expenses": "Cheltuieli",
+        "financial": "Financiar",
+        "invoices": "Facturi"
+    }
+}

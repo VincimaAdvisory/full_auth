@@ -1,0 +1,34 @@
+{
+    "dashboard": {
+        "welcome": "Dit is de startpagina. Welkom."
+    },
+    "forms": {
+        "accountActivated": "Account geactiveerd",
+        "activationFailed": "Kon je je account niet activeren",
+        "alreadyAccount": "Heb je al een account?",
+        "buttonLogIn": "Inloggen",
+        "buttonRegister": "Registreren",
+        "checkEmailActivateAccount": "Controleer je e-mail om je account te activeren",
+        "confirmPassword": "Bevestig wachtwoord",
+        "emailAddress": "E-mailadres",
+        "firstName": "Voornaam",
+        "forgotPassword": "Wachtwoord vergeten?",
+        "lastName": "Achternaam",
+        "loginFailed": "Inloggen mislukt",
+        "loginLink": "Log hier in",
+        "loginSuccess": "Succesvol ingelogd",
+        "noAccount": "Heb je nog geen account?",
+        "password": "Wachtwoord",
+        "registerLink": "Registreer hier",
+        "registrationFailed": "Registratie van account mislukt. Neem contact op met de beheerder.",
+        "titleLogIn": "Log in op je account",
+        "titleRegister": "Nieuwe gebruiker online registratie",
+        "titleSignUp": "Meld je aan voor je account"
+    },
+    "sidebar": {
+        "dashboard": "Dashboard",
+        "expenses": "Uitgaven",
+        "financial": "Financieel",
+        "invoices": "Facturen"
+    }
+}

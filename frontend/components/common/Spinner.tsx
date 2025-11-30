@@ -18,9 +18,9 @@ export default function Spinner({ sm, md, lg }: Props) {
   );
 
   return (
-    <div role="status">
+    <span role="status">
       <ImSpinner3 className={className} />
       <span className="sr-only">Loading...</span>
-    </div>
+    </span>
   );
 }

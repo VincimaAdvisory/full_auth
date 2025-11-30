@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useAppDispatch } from "@/redux/hooks";
-import { setAuth, finishInitialLoad } from "@/redux/features/authSlice";
+import { setAuth, logout, finishInitialLoad } from "@/redux/features/authSlice";
 import { useVerifyMutation } from "@/redux/features/authApiSlice";
 
 export default function useVerify() {
@@ -13,6 +13,9 @@ export default function useVerify() {
         .then(() => {
           dispatch(setAuth());
         })
+        // .catch(() => {
+        //   dispatch(logout());
+        // })
         .finally(() => {
           dispatch(finishInitialLoad());
         })

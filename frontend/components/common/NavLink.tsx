@@ -26,15 +26,19 @@ export default function NavLink({
       'text-gray-300 hover:bg-white/5 hover:text-white': !isSelected && !isBanner,
       'block text-base': isMobile,
       'text-sm': !isMobile,
-      'text-gray-300': isBanner
+      'text-gray-300': isBanner,
+      'cursor-pointer': !href,
     }
   )
   
   if (!href) {
     return (
-      <span className={className} role='button' onClick={rest.onClick} >
+      // <span className={className} role='button' onClick={rest.onClick} >
+      //   {children}
+      // </span>
+      <button className={className} type="button" onClick={rest.onClick}>
         {children}
-      </span>
+      </button>
     );
   }
 

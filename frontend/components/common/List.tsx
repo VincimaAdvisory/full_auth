@@ -24,7 +24,7 @@ export default function List({ items }: ListProps) {
           </div>
           <div>
             <p className='text-sm leading-6 text-gray-700'>
-              {item.value ?? <Spinner sm />}
+              {item.value || <Spinner sm />}
             </p>
           </div>
         </li>

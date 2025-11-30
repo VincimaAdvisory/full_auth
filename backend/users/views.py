@@ -1,4 +1,5 @@
 
+from rest_framework.response import Response
 from django.conf import settings
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -82,7 +83,7 @@ def set_cookie_internal(response, key):
 
 
 class CustomTokenObtainPairView(TokenObtainPairView):
-    def post(self, request, *args, **kwargs):
+    def post(self, request, *args, **kwargs) -> Response:
         response = super().post(request, *args, **kwargs)
 
         if response.status_code == status.HTTP_200_OK:
@@ -114,7 +115,7 @@ class CustomTokenObtainPairView(TokenObtainPairView):
 
 
 class CustomTokenRefreshView(TokenRefreshView):
-    def post(self, request, *args, **kwargs):
+    def post(self, request, *args, **kwargs) -> Response:
         refresh_token = request.COOKIES.get(settings.AUTH_COOKIE_REFRESH_KEY)
 
         if refresh_token:
@@ -152,7 +153,7 @@ class CustomTokenVerifyView(TokenVerifyView):
 class LogoutView(APIView):
     permission_classes = [AllowAny]
     def post(self, request, *args, **kwargs):
-        response = Response(status=status.HTTP_204_NO_CONTENT)
+        response: Response = Response(status=status.HTTP_204_NO_CONTENT)
         response.delete_cookie(settings.AUTH_COOKIE_ACCESS_KEY)
         response.delete_cookie(settings.AUTH_COOKIE_REFRESH_KEY)
 

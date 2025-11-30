@@ -65,7 +65,7 @@ export default function RegisterForm() {
     <Form
       config={config}
       isLoading={isLoading}
-      btnText={t('buttonSignUp')}
+      btnText={t('buttonRegister')}
       onChange={onChange}
       onSubmit={onSubmit}
     />

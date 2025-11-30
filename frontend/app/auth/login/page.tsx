@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from  "@/i18n/navigation"  // "next/link";
 import { LoginForm } from "@/components/forms";
 import type { Metadata } from "next";
 import { useLocale } from "next-intl";

@@ -19,7 +19,7 @@ export default function Navbar() {
   const dispatch = useAppDispatch();
   const [logout] = useLogoutMutation();
 
-  const t = useTypedTranslation('')
+  const t = useTypedTranslation();
 
   const { isAuthenticated } = useAppSelector(state => state.auth)
   
@@ -36,6 +36,11 @@ export default function Navbar() {
 
   const isSelected = (path: string): boolean =>  pathname === path;
 
+  const onSearchClick = (value: string) => {
+    console.log('Search for:', value);
+  }
+
+
   const authLinks = (isMobile: boolean) => (
     <>
       <NavLink
@@ -50,7 +55,7 @@ export default function Navbar() {
       </NavLink>
 
       <div className="h-10 w-full max-w-xl">
-        <SearchBar />
+        <SearchBar onSearchIconClick={onSearchClick} />
       </div>
     </>
   );
@@ -105,8 +110,8 @@ export default function Navbar() {
                   </NavLink>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                     { isAuthenticated ? authLinks(false) : guestLinks(false)}
+                  <div className="flex space-x-4 ">
+                    { isAuthenticated ? authLinks(false) : guestLinks(false)}
                     <LocaleSwitcher />
                   </div>
                 </div>
@@ -168,5 +173,5 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

@@ -67,33 +67,33 @@ export default function Page() {
 
 
 
-    <div className="flex-1 ml-64 overflow-y-auto p-6">
-      <h1>Dashboard</h1>
-      This is the home page. Welcome.
+    // <div className="flex-1 ml-64 overflow-y-auto p-6">
+    //   <h1>Dashboard</h1>
+    //   This is the home page. Welcome.
 
-        <div className="flex flex-row items-center justify-between max-w-28">
-          <FlagDE />
-          <FlagFR />
-          <FlagGB />
-          <FlagIT />
-          <FlagRO />
+    //     <div className="flex flex-row items-center justify-between max-w-28">
+    //       <FlagDE />
+    //       <FlagFR />
+    //       <FlagGB />
+    //       <FlagIT />
+    //       <FlagRO />
 
-        </div>
-        And now the LanguageSelector
-        <LanguageSelector 
-          iconLib="lu"
-        />
-        <div className="mt-5">
-          Language Selector 2:
-          <LanguageSelector2 />
-        </div>
+    //     </div>
+    //     And now the LanguageSelector
+    //     <LanguageSelector 
+    //       iconLib="lu"
+    //     />
+    //     <div className="mt-5">
+    //       Language Selector 2:
+    //       <LanguageSelector2 />
+    //     </div>
 
-        {/* <div className="mt-10">
-          <DropDownMenu />
-        </div> */}
+    //     {/* <div className="mt-10">
+    //       <DropDownMenu />
+    //     </div> */}
 
-        <div className="mt-10">
-          <LocaleSwitcher />
-        </div>
+    //     <div className="mt-10">
+    //       <LocaleSwitcher />
+    //     </div>
 
-    </div>
+    // </div>

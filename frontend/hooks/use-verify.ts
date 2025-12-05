@@ -13,11 +13,11 @@ export default function useVerify() {
         .then(() => {
           dispatch(setAuth());
         })
-        // .catch(() => {
-        //   dispatch(logout());
-        // })
+        .catch(() => {
+          dispatch(logout());
+        })
         .finally(() => {
           dispatch(finishInitialLoad());
         })
-    }, []);
+    }, [verify, dispatch]);
 }

@@ -27,6 +27,7 @@ const baseQueryWithReauth: BaseQueryFn<
   let result = await baseQuery(args, api, extraOptions);
 
   if (result.error && result.error.status === 401) {
+    console.log('baseQueryWithReauth: 401 error, attempting token refresh');
     // checking whether the mutex is locked
     if (!mutex.isLocked()) {
       const release = await mutex.acquire();
@@ -59,6 +60,7 @@ const baseQueryWithReauth: BaseQueryFn<
       result = await baseQuery(args, api, extraOptions);
     }
   }
+  console.log('baseQueryWithReauth result:', result);
   return result;
 };
 

@@ -1,8 +1,10 @@
 'use client';
-
+import { useLocale } from "next-intl";
+import { useEffect } from "react";
 import { useRetrieveUserQuery } from "@/redux/features/authApiSlice";
 import { useRouter } from "next/navigation";
 // import { useRouter } from "@/i18n/navigation";
+import { RequireAuth } from "@/components/utils";
 
 import { FlagDE, FlagES, FlagFR, FlagGB, FlagIT, FlagNL, FlagRO } from "@/components/icons";
 
@@ -15,9 +17,11 @@ import { toast } from "react-toastify";
 
 export default function Page() {
   const router = useRouter();
+  const locale = useLocale();
 
-  const { data: user, isLoading, isError } = useRetrieveUserQuery();
-  
+  const { data: user, isLoading, isError, refetch } = useRetrieveUserQuery(undefined, {refetchOnMountOrArgChange: true});
+  console.log('retrieve user query', { user, isLoading, isError });
+
   const config = [
     {
       label: 'First Name',
@@ -33,18 +37,35 @@ export default function Page() {
     },
   ]
   
+  useEffect(() => {
+    refetch();
+  }, [locale, refetch]);
+
+  useEffect(() => { 
+    if (isError) {
+      toast.error('Error retrieving user data');
+      router.push('/auth/login');
+    }
+  }, [isError, router]);
+
+
+  if (!user && !isLoading) {
+    toast.error('No user data found');
+    return (
+      <div className="flex justify-center my-8">
+        No user data found.
+      </div>
+    );
+  }
+
+
   if (isLoading) {
     return (
       <div className="flex justify-center my-8">
-        <Spinner lg/>
+        Loading... <Spinner lg/>
       </div>
     );
   } 
-  
-  if (isError) {
-    toast.error('Error retrieving user data');
-    router.push('/auth/login');
-  }     
 
 
   // const t = useTypedTranslation('forms');

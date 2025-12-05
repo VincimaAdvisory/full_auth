@@ -32,7 +32,7 @@ const authApiSlice = apiSlice.injectEndpoints({
                 body: { first_name, last_name, email, password, re_password },
             }),
         }),
-        verify: builder.mutation({
+        verify: builder.mutation<unknown, void>({
             query: () => ({
                 url: '/jwt/verify/',
                 method: 'POST',

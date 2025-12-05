@@ -18,12 +18,12 @@ export default function List({ items }: ListProps) {
           className="flex justify-between gap-x-6 py-5"
         >
           <div>
-            <p className='text-sm font-semibold leading-6 text-gray-900'>
+            <p className='text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100'>
               {item.label}
             </p>
           </div>
           <div>
-            <p className='text-sm leading-6 text-gray-700'>
+            <p className='text-sm leading-6 text-gray-700 dark:text-gray-300'>
               {item.value || <Spinner sm />}
             </p>
           </div>

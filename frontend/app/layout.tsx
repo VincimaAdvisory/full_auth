@@ -4,7 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { cookies } from "next/headers";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
-import Provider from "@/redux/provider";
+import { Provider } from "@/redux/provider";
 import { Footer, Navbar, NavbarMobile, Sidebar } from "@/components/common";
 import { Setup } from "@/components/utils";
 import { NextIntlClientProvider } from "next-intl";

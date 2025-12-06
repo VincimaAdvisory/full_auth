@@ -1,34 +1,34 @@
 {
-    "dashboard": {
-        "welcome": "This is the home page. Welcome."
-    },
-    "forms": {
-        "accountActivated": "Account activated",
-        "activationFailed": "Failed to activate your account",
-        "alreadyAccount": "Already have an account?",
-        "buttonLogIn": "Log in",
-        "buttonRegister": "Register",
-        "checkEmailActivateAccount": "Please check your email to activate your account",
-        "confirmPassword": "Confirm password",
-        "emailAddress": "Email address",
-        "firstName": "First Name",
-        "forgotPassword": "Forgot password?",
-        "lastName": "Last Name",
-        "loginFailed": "Failed to log in",
-        "loginLink": "Log in here",
-        "loginSuccess": "Successfully logged in",
-        "noAccount": "Don't have an account?",
-        "password": "Password",
-        "registerLink": "Register here",
-        "registrationFailed": "Failed to register account. Please contact admin",
-        "titleLogIn": "Sign in into your account",
-        "titleRegister": "New User Online Registration",
-        "titleSignUp": "Sign up for your account"
-    },
-    "sidebar": {
-        "dashboard": "Dashboard",
-        "expenses": "Expenses",
-        "financial": "Financial",
-        "invoices": "Invoices"
-    }
+  "dashboard": {
+    "welcome": "This is the home page. Welcome."
+  },
+  "forms": {
+    "accountActivated": "Account activated",
+    "activationFailed": "Failed to activate your account",
+    "alreadyAccount": "Already have an account?",
+    "buttonLogIn": "Log in",
+    "buttonRegister": "Register",
+    "checkEmailActivateAccount": "Please check your email to activate your account",
+    "confirmPassword": "Confirm password",
+    "emailAddress": "Email address",
+    "firstName": "First Name",
+    "forgotPassword": "Forgot password?",
+    "lastName": "Last Name",
+    "loginFailed": "Failed to log in",
+    "loginLink": "Log in here",
+    "loginSuccess": "Successfully logged in",
+    "noAccount": "Don't have an account?",
+    "password": "Password",
+    "registerLink": "Register here",
+    "registrationFailed": "Failed to register account. Please contact admin",
+    "titleLogIn": "Sign in into your account",
+    "titleRegister": "New User Online Registration",
+    "titleSignUp": "Sign up for your account"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "expenses": "Expenses",
+    "financial": "Financial",
+    "invoices": "Invoices"
+  }
 }
